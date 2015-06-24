@@ -57,8 +57,11 @@ class AddressBook
     return nil
   end
 
-
   def remove_entry(entry)
     entries.delete(entry)
+  end
+
+  def detonate
+    @entries = []
   end
 end
